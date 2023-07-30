@@ -15,16 +15,16 @@ class HomeTab extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: <Widget>[
-          WriteSomethingWidget(),
-          SeparatorWidget(),
-          StoriesWidget(),
+          const WriteSomethingWidget(),
+          const SeparatorWidget(),
+          const StoriesWidget(),
           for(Post post in posts) Column(
             children: <Widget>[
-              SeparatorWidget(),
+              const SeparatorWidget(),
               PostWidget(post: post),
             ],
           ),
-          SeparatorWidget(),
+          const SeparatorWidget(),
         ],
       ),
     );

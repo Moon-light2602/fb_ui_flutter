@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../widgets/separator_widget.dart';
 
 class ProfileTab extends StatelessWidget {
+  const ProfileTab({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -15,7 +17,7 @@ class ProfileTab extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
                   height: 180.0,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/cover.jpg'), fit: BoxFit.cover),
+                    image: const DecorationImage(image: AssetImage('assets/story2.jpg'), fit: BoxFit.cover),
                     borderRadius: BorderRadius.circular(10.0)
                   ),
                 ),
@@ -24,11 +26,11 @@ class ProfileTab extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
                     const CircleAvatar(
-                      backgroundImage: AssetImage('assets/Mike Tyler.jpg'),
+                      backgroundImage: AssetImage('assets/avatar.jpg'),
                       radius: 70.0,
                     ),
                     const SizedBox(height: 20.0),
-                    const Text('Mike Tyler', style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold)),
+                    const Text('Mike', style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold)),
                     const SizedBox(height: 20.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -72,7 +74,7 @@ class ProfileTab extends StatelessWidget {
                   children: <Widget>[
                     Icon(Icons.home, color: Colors.grey, size: 30.0),
                     SizedBox(width: 10.0),
-                    Text('Lives in New York', style: TextStyle(fontSize: 16.0))
+                    Text('Lives in Ha Noi', style: TextStyle(fontSize: 16.0))
                   ],
                 ),
                 const SizedBox(height: 15.0),
@@ -80,7 +82,7 @@ class ProfileTab extends StatelessWidget {
                   children: <Widget>[
                     Icon(Icons.location_on, color: Colors.grey, size: 30.0),
                     SizedBox(width: 10.0),
-                    Text('From New York', style: TextStyle(fontSize: 16.0))
+                    Text('From Viet Nam', style: TextStyle(fontSize: 16.0))
                   ],
                 ),
                 const SizedBox(height: 15.0),

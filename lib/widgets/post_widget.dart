@@ -30,7 +30,29 @@ class PostWidget extends StatelessWidget {
                 children: <Widget>[
                   Text(post.username, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0)),
                   const SizedBox(height: 5.0),
-                  Text(post.time)
+                  Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(post.time,
+                        style: TextStyle(
+                          color: Colors.grey.shade600,
+                          fontWeight: FontWeight.w400,
+                        ),
+                        ),
+                        Text(
+                            ' . ',
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.grey.shade700,
+                        ),
+                        ),
+                        const Icon(Icons.public,
+                          size: 20,
+                          color: Colors.grey,
+                        ),
+                      ],
+                  ),
+
                 ],
               ),
             ],
@@ -39,6 +61,10 @@ class PostWidget extends StatelessWidget {
           const SizedBox(height: 20.0),
 
           Text(post.content, style: const TextStyle(fontSize: 15.0)),
+
+          const SizedBox(height: 10.0),
+
+          Image.asset('assets/story8.jpg'),
 
           const SizedBox(height: 10.0),
 

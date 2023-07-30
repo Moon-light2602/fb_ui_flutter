@@ -3,6 +3,7 @@ class Post{
   final String username;
   final String time;
   final String content;
+  final String imagePost;
   final String likes;
   final String comments;
   final String shares;
@@ -12,6 +13,7 @@ class Post{
     required this.username,
     required this.time,
     required this.content,
+    required this.imagePost,
     required this.likes,
     required this.comments,
     required this.shares
@@ -19,9 +21,11 @@ class Post{
 }
 
 List<Post> posts = [
-  Post(profileImageUrl: 'assets/Sam Wilson.jpg', username: 'Sam', time: '5h', content: 'Hey guys whats up, This is Sam. I am currently in singapore. Came here to make some amazing memories', likes: '63', comments: '11', shares: '2'),
-  Post(profileImageUrl: 'assets/jeremy.jpg', username: 'Jeremy', time: '13h', content: 'I am going to make a Flutter complete course, where i will be teaching all the things that a developer would need to know in order to become a great flutter developer. Course is for beginners, and will be taught everything related to flutter from scratch!!', likes: '52', comments: '1', shares: '6'),
-  Post(profileImageUrl: 'assets/mathew.jpg', username: 'Mathew Hallberg', time: '2d', content: 'Hey guys this is Mathew, I recently created a cool AR/VR application and pushed it to github, interested people can go and see the working of the app. I hope you guys like it!', likes: '61', comments: '3', shares: '2'),
-  Post(profileImageUrl: 'assets/eddison.jpg', username: 'Eddison', time: '1w', content: 'Good afternoon people, hope you are doing well. STAY HOME STAY SAFE. Hope you are healthy and happy. Wish you good health guys :)', likes: '233', comments: '6', shares: '4'),
-  Post(profileImageUrl: 'assets/olivia.jpg', username: 'Olivia', time: '3w', content: 'I am starting a job in Los Angeles next week, this is my first ever job. Wish me luck guys', likes: '77', comments: '7', shares: '2'),
+  Post(profileImageUrl: 'assets/Sam Wilson.jpg', username: 'Sam', time: '5h', content: 'Hey guys whats up, This is Sam. I am currently in singapore. Came here to make some amazing memories',imagePost: 'assets/story8.jpg', likes: '63', comments: '11', shares: '2'),
+  Post(profileImageUrl: 'assets/jeremy.jpg', username: 'Jeremy', time: '13h',
+      content: 'This is content of post. I hope you guys like it!!! :))))',
+      imagePost: 'assets/story1.jpg', likes: '52', comments: '1', shares: '6'),
+  Post(profileImageUrl: 'assets/mathew.jpg', username: 'Mathew Hallberg', time: '2d', content: 'Hey guys this is Mathew, I hope you guys like it!', imagePost: 'assets/story2.jpg', likes: '61', comments: '3', shares: '2'),
+  Post(profileImageUrl: 'assets/eddison.jpg', username: 'Eddison', time: '1w', content: 'Good afternoon people, hope you are doing well. Wish you good health guys :)', imagePost: 'assets.story3.jpg', likes: '233', comments: '6', shares: '4'),
+  Post(profileImageUrl: 'assets/olivia.jpg', username: 'Olivia', time: '3w', content: 'This is my first ever job. Wish me luck guys', imagePost: 'assets/story6.jpg', likes: '77', comments: '7', shares: '2'),
 ];
