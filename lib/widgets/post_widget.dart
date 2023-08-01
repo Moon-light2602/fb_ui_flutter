@@ -30,6 +30,7 @@ class PostWidget extends StatelessWidget {
                 children: <Widget>[
                   Text(post.username, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0)),
                   const SizedBox(height: 5.0),
+
                   Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -54,6 +55,20 @@ class PostWidget extends StatelessWidget {
                   ),
 
                 ],
+              ),
+
+              const SizedBox(width: 165,),
+              IconButton(
+                onPressed: (){},
+                icon: Icon(
+                  Icons.more_horiz_outlined,
+                  color: Colors.grey.shade600,
+                ),
+              ),
+              IconButton(
+                onPressed: (){},
+                icon: Icon(Icons.clear_rounded,
+                    color: Colors.grey.shade500),
               ),
             ],
           ),

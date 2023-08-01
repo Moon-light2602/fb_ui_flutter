@@ -5,7 +5,8 @@ class WatchTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('Watch',
+    return const
+    Text('Watch',
     style: TextStyle(
       color: Colors.black,
       fontWeight: FontWeight.w600,
