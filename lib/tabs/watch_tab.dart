@@ -5,13 +5,14 @@ class WatchTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const
-    Text('Watch',
-    style: TextStyle(
-      color: Colors.black,
-      fontWeight: FontWeight.w600,
-    ),
+    return const Center(
+      child: Text(
+        'Watch',
+        style: TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.w600,
+        ),
+      ),
     );
   }
-  
 }
